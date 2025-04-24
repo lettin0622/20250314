@@ -1,0 +1,20 @@
+/* style.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* 讓畫布在最底層 */
+}
+
+/* 所有 DOM 元素都放在 canvas 上層 */
+input, select, button, div, iframe {
+  position: absolute;
+  z-index: 1;
+}
